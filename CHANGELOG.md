@@ -24,6 +24,9 @@ functionality, under the "Removed" section.
 - `nh clean --cross-filesystems` / `-x` allows the gcroot scan to cross
   filesystem boundaries. By default the walk stays on the same filesystem as
   `/nix/var/nix/gcroots`.
+- `nh os delete` deletes specific generations by generation ID. Runs
+  `nix-store gc` and `switch-to-configuration boot` by default after the
+  generations are removed.
 
 ### Changed
 
